@@ -48,6 +48,6 @@ In the function folder include a file named 'handler.py' and include an 'handle'
 ```
 def handle(body: RequestModel):
 ```
-Implement a pydantic ResponseModel and RequestModel for documentation purposes
+Implement a pydantic RequestModel for documentation purposes
 
 Check the template/python3-fastapi/function folder for a minimal example
