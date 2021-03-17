@@ -41,4 +41,6 @@ $ curl -i $OPENFAAS_URL/function/<fn-name>
 ### Mandatory FastAPI object 
 In the function folder include a file named 'main.py' and include an 'app' object of class 'FastAPI'
 
-All FastAPI functionality included
+Check the template/python3-fastapi/function folder for a minimal example
+
+All FastAPI functionality at your disposal
