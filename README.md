@@ -33,13 +33,22 @@ $ OPENFAAS_URL=http://127.0.0.1:8080
 Test the new function
 
 ```
-$ curl -i $OPENFAAS_URL/function/<fn-name>
+$ curl -X POST $OPENFAAS_URL/function/<fn-name>
+```
+Get the documentation in openapi.json format
+
+```
+$ curl -X GET $OPENFAAS_URL/function/<fn-name>
 ```
 
 ## Usage
 
 ### Mandatory FastAPI object 
-In the function folder include a file named 'main.py' and include an 'app' object of class 'FastAPI'
+In the function folder include a file named 'handler.py' and include an 'handle' funcion:
+```
+def handle(body: RequestModel):
+```
+Implement a pydantic ResponseModel and RequestModel for documentation purposes
 
 Check the template/python3-fastapi/function folder for a minimal example
 

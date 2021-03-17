@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from function import main
+from function import handler
 
-assert isinstance(main.app, FastAPI)
+app = FastAPI(openapi_url='/', docs_url=None, redoc_url=None)
 
-app = main.app
+
+app.post('/', response_model=handler.ResponseModel)(handler.handle)
