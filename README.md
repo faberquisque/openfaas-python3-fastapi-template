@@ -51,5 +51,3 @@ def handle(body: RequestModel):
 Implement a pydantic ResponseModel and RequestModel for documentation purposes
 
 Check the template/python3-fastapi/function folder for a minimal example
-
-All FastAPI functionality at your disposal
