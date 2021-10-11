@@ -8,7 +8,7 @@ Templates available in this repository:
 
 ## Downloading the templates
 ```
-$ faas template pull https://github.com/faberquisque/openfaas-python3-fastapi-template
+$ faas template pull https://github.com/gastonmichel/openfaas-python3-fastapi-template
 ```
 
 ## Using the python3-fastapi templates
